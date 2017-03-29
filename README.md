@@ -1,10 +1,13 @@
+![](horcrux.png)
+
 # ssb-horcrux
 
-This is a proof of concept that will make a useful depject module at some point.
+[WIP] - will be a depject patchbay module
 
-The idea is to split your private key into `n` parts, then distribute those to (mostly) trusthworthy friends.
-If you ever need to recover your key, you can ask those friends for those fragments, requiring only `m` of them to fully recover your key.
-(where `m <= n` and is decided at the time of split)
+Do you crave immortality? Secure your private key by splitting it like Voldemort did (no human sacrifce required).
+
+Split your key into some number of parts, give those to trusted friends, and if your computer ever dies, you can re-create your private key.
+
 
 ## example script
 
@@ -26,3 +29,6 @@ var myKey          = secrets.hex2str( cominedShares )
 
 console.log( myKey )
 ```
+
+https://www.npmjs.com/package/secrets.js
+
