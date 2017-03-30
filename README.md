@@ -1,6 +1,6 @@
 ![](horcrux.png)
 
-# ssb-horcrux
+# patch-horcrux
 
 [WIP] - will be a depject patchbay module
 

@@ -1,0 +1,24 @@
+{
+  "name": "ssb-horcrux",
+  "version": "0.0.1",
+  "description": "split your private key like voldemort!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssbc/ssb-horcrux.git"
+  },
+  "author": "mixmix",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ssbc/ssb-horcrux/issues"
+  },
+  "homepage": "https://github.com/ssbc/ssb-horcrux#readme",
+  "dependencies": {
+    "depnest": "^1.3.0",
+    "mutant": "^3.18.0",
+    "secrets.js": "^0.1.8"
+  }
+}
