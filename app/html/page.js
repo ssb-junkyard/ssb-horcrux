@@ -13,7 +13,7 @@ exports.needs = nest({
 exports.create = function (api) {
 
   return nest({
-    'router.html.page': horcruxPage
+    'app.html.page': horcruxPage
   })
 
   function horcruxPage (path) {
