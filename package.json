@@ -1,6 +1,6 @@
 {
   "name": "ssb-horcrux",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "split your private key like voldemort!",
   "main": "index.js",
   "scripts": {
