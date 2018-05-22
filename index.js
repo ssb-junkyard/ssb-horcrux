@@ -1,7 +1,8 @@
 module.exports = {
   horcrux: {
-    page: require('./app/html/page'),
-    styles: require('./styles/mcss')
+    page: require('./app/page/horcrux'),
+    styles: require('./styles/mcss'),
+    routes: require('./router/sync/routes')
   }
 }
 

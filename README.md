@@ -25,7 +25,7 @@ var shares = secrets.share( hexKey, 5, 3 )
 console.log( shares )
 
 var combinedShares = secrets.combine( shares.slice(0,3) )
-var myKey          = secrets.hex2str( cominedShares )
+var myKey          = secrets.hex2str( combinedShares )
 
 console.log( myKey )
 ```

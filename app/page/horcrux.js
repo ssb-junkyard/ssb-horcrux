@@ -3,7 +3,7 @@ const { h, Value, computed, map } = require('mutant')
 const secrets = require('secrets.js')
 
 exports.gives = nest({
-  'app.html.page': true,
+  'app.page.horcrux': true
 })
 
 exports.needs = nest({
@@ -11,15 +11,11 @@ exports.needs = nest({
 })
 
 exports.create = function (api) {
-
   return nest({
-    'app.html.page': horcruxPage
+    'app.page.horcrux': horcruxPage
   })
 
   function horcruxPage (path) {
-
-    if (path !== '/horcrux') return
-
     const key = api.keys.sync.load().private
 
     var total = Value(5)
@@ -56,7 +52,7 @@ exports.create = function (api) {
           ])
         })
       ])
-    
+
     ])
   }
 }
@@ -66,13 +62,12 @@ function getNumber (event) {
 
   if (isNaN(n) || n < 1) return null
 
-  return n 
+  return n
 }
 
 function horcrux (soul, totalHorcrux = 5, minHorcruxToRevive = 3) {
-  const hexKey =  secrets.str2hex(soul)
-  const shares = secrets.share( hexKey, totalHorcrux, minHorcruxToRevive )
+  const hexKey = secrets.str2hex(soul)
+  const shares = secrets.share(hexKey, totalHorcrux, minHorcruxToRevive)
 
   return shares
 }
-
